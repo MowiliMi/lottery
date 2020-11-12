@@ -1,0 +1,20 @@
+{
+  "global": {
+    "name": "Lotto",
+    "loading": "Loading..."
+  },
+  "components": {
+    "hello": {
+      "title": "Welcome in LottoHelden!"
+    },
+    "lotteryCard": {
+      "seeDetails": "see details"
+    },
+    "lotteryDetails": {
+      "winningResults": "Winning Results",
+      "date": "Date",
+      "jackpot": "Jackpot",
+      "winningNumbers": "Winning Numbers"
+    }
+  }
+}

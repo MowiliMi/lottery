@@ -1,0 +1,162 @@
+@media (max-width: 576px) {
+  .lotteries-card {
+    &--name {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 15px;
+    }
+
+    &--jackpot {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 10px;
+    }
+
+    &--date {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    a {
+      margin-top: 25px;
+    }
+  }
+
+  .lotteries-details {
+    padding: 15px;
+
+    &--results-head {
+      &-numbers {
+        display: none;
+      }
+    }
+
+    &--results-body {
+      border-bottom: 1px solid $border;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .lotteries-card {
+    &--name {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 15px;
+    }
+
+    &--jackpot {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 10px;
+    }
+
+    &--date {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    a {
+      margin-top: 25px;
+    }
+  }
+
+  .lotteries-details {
+    padding: 15px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .lotteries-card {
+    &--name {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 15px;
+    }
+
+    &--jackpot {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 10px;
+    }
+
+    &--date {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    a {
+      margin-top: 25px;
+    }
+  }
+
+  .lotteries-details {
+    padding: 15px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .lotteries-card {
+    &--name {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 35px;
+    }
+
+    &--jackpot {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-bottom: 10px;
+    }
+
+    &--date {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .lotteries-details {
+    padding: 25px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .lotteries-card {
+    &--name {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 35px;
+    }
+
+    &--jackpot {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-bottom: 10px;
+    }
+
+    &--date {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .lotteries-details {
+    padding: 25px;
+
+    &--results-head,
+    &--results-body {
+      &-date {
+        min-width: 75px;
+      }
+
+      &-jackpot {
+        min-width: 125px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.trans {
+  $second: 0.2s;
+  transition-timing-function: ease-in-out;
+  -o-transition: all $second linear;
+  -moz-transition: all $second linear;
+  -khtml-transition: all $second linear;
+  -webkit-transition: all $second linear;
+  -ms-transition: all $second linear;
+  transition: all $second linear;
+}
+
+.boxShadow {
+  box-shadow: 0px 1px 9px -2px #d2d2d2;
+}

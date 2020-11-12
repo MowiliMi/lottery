@@ -1,0 +1,38 @@
+@media (max-width: 576px) {
+  .hello {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .hello {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .hello {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .hello {
+    font-size: 3rem;
+    line-height: 8rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .hello {
+    font-size: 3rem;
+    line-height: 8rem;
+  }
+}

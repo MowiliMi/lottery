@@ -1,0 +1,150 @@
+.lotteries-card {
+  @include border-radius(6px);
+  @extend .boxShadow;
+  position: relative;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  display: block;
+
+  &--name,
+  &--jackpot,
+  &--date {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &--name {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &--jackpot {
+    color: $green;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 10px;
+  }
+
+  &--date {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba($text, 0.5);
+  }
+
+  a {
+    @include border-radius(6px);
+    position: relative;
+    display: block;
+    margin-top: 55px;
+    border: 1px solid $border;
+    color: rgba($text, 0.5);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgba($text, 0.5);
+    text-decoration: none;
+
+    &:hover {
+      @extend .trans;
+      background-color: lighten($border, 3%);
+    }
+  }
+}
+
+.lotteries-details {
+  @include border-radius(6px);
+  @extend .boxShadow;
+  position: relative;
+  display: block;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 15px;
+
+  &--name {
+    position: relative;
+    width: 100%;
+  }
+
+  &--name {
+    font-size: 2.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &--results-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &--results-head {
+    margin-bottom: 15px;
+  }
+
+  &--results-head,
+  &--results-body {
+    width: 100%;
+
+    &-date,
+    &-jackpot,
+    &-numbers {
+      font-weight: 600;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    &-date {
+      min-width: 74px;
+    }
+
+    &-jackpot {
+      min-width: 125px;
+    }
+  }
+
+  &--results-body {
+    &-date,
+    &-jackpot,
+    &-numbers {
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    &-numbers {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          background-color: $green;
+          color: white;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          border-radius: 50%;
+          margin-right: 15px;
+          font-size: 1.2rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.additional {
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

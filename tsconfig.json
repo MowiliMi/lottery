@@ -6,36 +6,31 @@
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env",
-      "jest"
-    ],
+    "types": ["webpack-env", "jest"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@api": ["src/api"],
+      "@assets/*": ["src/assets/*"],
+      "@components": ["src/components"],
+      "@environment": ["src/environment"],
+      "@filters": ["src/filters"],
+      "@locales": ["src/locales"],
+      "@plugins": ["src/plugins"],
+      "@routers": ["src/routers"],
+      "@stores": ["src/stores"],
+      "@types": ["src/types"],
+      "@views/*": ["src/views/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.json", "tests/**/*.ts", "tests/**/*.tsx"],
+  "exclude": ["node_modules"],
+  "transformIgnorePatterns": ["node_modules/(?!.*?/es/.*\\.js)"]
 }
